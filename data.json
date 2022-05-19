@@ -1,7 +1,7 @@
 {
 	"project": {
-		"title": "天阳融信-开发运维门户",
-		"info": "天阳融信产品研发管理体系，提供DevOps研发管理工具，各类应用自动部署，项目管理，应用管理平台。",
+		"title": "bestxiao-开发运维门户",
+		"info": "bestxiao产品研发管理体系，提供DevOps研发管理工具，各类应用自动部署，项目管理，应用管理平台。",
 		"nav": {
 			"title": "导航分类：",
 			"list": [{
@@ -35,28 +35,28 @@
 			"info": "公司项目管理，基础配置，企业知识库，宣传材料相关工具。",
 			"id": "p1",
 			"cardList": [{
-				"title": "天阳公司OA",
-				"info": "天阳公司OA为各位提供报工，请假，项目信息查看等信息。请各位日常使用",
-				"url": "http://oa.tansun.com.cn:20080/oa/oalogin.jsp",
+				"title": "bestxiao公司OA",
+				"info": "bestxiao公司OA为各位提供报工，请假，项目信息查看等信息。请各位日常使用",
+				"url": "http://bestxiao.cn:20080/oa/oalogin.jsp",
 				"icon": "icon-fengche"
 			}, {
-				"title": "天阳公司-SmartBI",
-				"info": "天阳SmartBI 报表工具为各位管理人员提供每月运营数据，管理数据，人员数据的统计分析。",
-				"url": "http://oa.tansun.com.cn:20081/smartbi/vision/index.jsp",
+				"title": "bestxiao公司-SmartBI",
+				"info": "bestxiaoSmartBI 报表工具为各位管理人员提供每月运营数据，管理数据，人员数据的统计分析。",
+				"url": "http://bestxiao.cn:20081/smartbi/vision/index.jsp",
 				"icon": "icon-shujukanban"
 			}, {
 				"title": "禅道Zentao",
 				"info": "项目管理（ProjectMan）为敏捷开发团队提供简单高效的团队协作服务，包含多项目管理、敏捷迭代、看板协作、需求管理、缺陷跟踪、文档管理、自定制报表等功能。",
-				"url": "http://oa.tansun.com.cn:10063/zentao/my/",
+				"url": "http://bestxiao.cn:10063/zentao/my/",
 				"icon": "icon-guanfangbanben"
 			}, {
 				"title": "知识库Confluence",
-				"info": "天阳融信企业Wiki平台，提供产品知识库，项目知识库，公共知识库管理。统一的与企业知识库平台。",
-				"url": "http://oa.tansun.com.cn:10003",
+				"info": "bestxiao企业Wiki平台，提供产品知识库，项目知识库，公共知识库管理。统一的与企业知识库平台。",
+				"url": "http://bestxiao.cn:10003",
 				"icon": "icon-icon_bangzhuwendang"
 			}, {
 				"title": "会议",
-				"info": "天阳融信会议采用钉钉群企业会议模式。完成跨区域、跨项目沟通与协作，打破区域壁垒。",
+				"info": "bestxiao会议采用钉钉群企业会议模式。完成跨区域、跨项目沟通与协作，打破区域壁垒。",
 				"url": "#",
 				"icon": "icon-rongxuejirongjiechi"
 			}, {
@@ -82,22 +82,22 @@
 			}, {
 				"title": "TeamCity自动构建",
 				"info": "TeamCity是实现公司DevOps重要组件，提供代码自动编译，打包，docker镜像构建等CI",
-				"url": "http://oa.tansun.com.cn:19987/",
+				"url": "http://bestxiao.cn:19987/",
 				"icon": "icon-lianjieliu"
 			}, {
 				"title": "Maven仓库",
-				"info": "天阳融信自有Maven仓库，Java构建物集中存储，第三方包存储管理仓库。内网地址：10.6.70.71:10001,具体使用参考Wiki",
-				"url": "http://oa.tansun.com.cn:10010/",
+				"info": "bestxiao自有Maven仓库，Java构建物集中存储，第三方包存储管理仓库。内网地址：10.6.70.71:10001,具体使用参考Wiki",
+				"url": "http://bestxiao.cn:10010/",
 				"icon": "icon-jizhanguanli"
 			}, {
 				"title": "API文档",
 				"info": "API文档管理提供前后端的接口管理工具，规范前后端调用接口，自动生成前端相关代码。",
-				"url": "http://oa.tansun.com.cn:18080/index.html#/documentList",
+				"url": "http://bestxiao.cn:18080/index.html#/documentList",
 				"icon": "icon-APIjieru"
 			}, {
 				"title": "Sonarqube代码检查",
 				"info": "是基于Sonarqube代码检查质量管理的服务，软件开发者可在编码完成后执行多语言的代码静态检查和安全检查，获取全面的质量报告，并提供缺陷的改进建议和趋势分析，有效管控代码质量，降低解决成本",
-				"url": "http://oa.tansun.com.cn:18806/",
+				"url": "http://bestxiao.cn:18806/",
 				"icon": "icon-chaxun"
 			}, {
 				"title": "云数据库 MySQL(VPN)",
@@ -106,7 +106,7 @@
 				"icon": "icon-mysql"
 			}, {
 				"title": "云数据库 PostgreSQL(VPN)",
-				"info": "管理账号：postgres 密码：咨询管理员。服务器IP： 10.6.70.240:30002, 外网IP：oa.tansun.com.cn:18802",
+				"info": "管理账号：postgres 密码：咨询管理员。服务器IP： 10.6.70.240:30002, 外网IP：bestxiao.cn:18802",
 				"url": "#",
 				"icon": "icon-chucun"
 			}, {
@@ -117,7 +117,7 @@
 			}, {
 				"title": "数据管理服务 Adminer",
 				"info": "基于开源数据管理工具Adminer，提供一个关系型数据库的Web管理界面，在没有Navcat工具时可以做SQL工具使用。",
-				"url": "http://oa.tansun.com.cn:18831",
+				"url": "http://bestxiao.cn:18831",
 				"icon": "icon-guanlianshebei"
 			}]
 		}, {
@@ -126,23 +126,23 @@
 			"id": "p3",
 			"cardList": [{
 				"title": "Kubernetes集群",
-				"info": "天阳融信K8S应用编排Rancher服务通过图形化界面，提供直观便捷的K8S应用部署，实现一键式应用的部署",
-				"url": "https://oa.tansun.com.cn:10002",
+				"info": "bestxiaoK8S应用编排Rancher服务通过图形化界面，提供直观便捷的K8S应用部署，实现一键式应用的部署",
+				"url": "https://bestxiao.cn:10002",
 				"icon": "icon-shenjing"
 			}, {
 				"title": "SSH堡垒机服务",
 				"info": "提供内网的SSH连接服务，无需VPN即可访问公司内网的服务器。为外部客户提供随时随地接入内网虚拟机的便利。",
-				"url": "http://oa.tansun.com.cn:18808/",
+				"url": "http://bestxiao.cn:18808/",
 				"icon": "icon-APIjieru"
 			}, {
 				"title": "Docker镜像仓库(VPN)",
-				"info": "Docker镜像是用于存储天阳融信自有应用，基础应用的仓库平台。镜像服务（Image Management Service）提供镜像管理能力。同时，为K8S集群提供支持。",
+				"info": "Docker镜像是用于存储bestxiao自有应用，基础应用的仓库平台。镜像服务（Image Management Service）提供镜像管理能力。同时，为K8S集群提供支持。",
 				"url": "http://10.6.70.10/",
 				"icon": "icon-dici"
 			}, {
 				"title": "Kubernetes存储(VPN)",
 				"info": "分布式存储管理（Longhorn）是一种为Rancher K8S平台提供的存储服务，通过数据冗余和缓存加速等多项技术，提供高可用性和持久性，以及稳定的低时延性能。您可以对云硬盘做格式化、创建文件系统等操作，并对数据做持久化存储",
-				"url": "https://oa.tansun.com.cn:10002/k8s/clusters/c-76ll6/api/v1/namespaces/longhorn-system/services/http:longhorn-frontend:80/proxy/",
+				"url": "https://bestxiao.cn:10002/k8s/clusters/c-76ll6/api/v1/namespaces/longhorn-system/services/http:longhorn-frontend:80/proxy/",
 				"icon": "icon-chucun"
 			}, {
 				"title": "在线文件服务",
@@ -157,7 +157,7 @@
 			"cardList": [{
 				"title": "内外网映射",
 				"info": "提供公司内外网服务器的端口映射，提供内网服务器配置，端口服务清单。详情参考wiki内详细页面。",
-				"url": "http://oa.tansun.com.cn:10003/x/VYAL",
+				"url": "http://bestxiao.cn:10003/x/VYAL",
 				"icon": "icon-fuwudiqiu"
 			}]
 		}, {
@@ -167,22 +167,22 @@
 			"cardList": [{
 				"title": "VIOM1.5版本",
 				"info": "VIOM 1.5版本，集成集中监控，数据大屏，cmdb架构图管理。",
-				"url": "http://oa.tansun.com.cn:18080/",
+				"url": "http://bestxiao.cn:18080/",
 				"icon": "icon-yunyingguanli"
 			}, {
 				"title": "Dragon门户2.0",
 				"info": "Dragon可视化平台。门户框架2.0版本，包括基本配置，大屏，CMDB，自动化，日志，数据可视化平台",
-				"url": "http://oa.tansun.com.cn:18005/",
+				"url": "http://bestxiao.cn:18005/",
 				"icon": "icon-guanfangbanben"
 			}, {
-				"title": "天阳融信大数据平台",
-				"info": "天阳融信大数据平台演示平台，",
+				"title": "bestxiao大数据平台",
+				"info": "bestxiao大数据平台演示平台，",
 				"url": "http://106.39.97.163:18980/balantflow/",
 				"icon": "icon-liujisuan"
 			}, {
 				"title": "需求管理工具（REQM）",
 				"info": "公司需求管理工具，需求的结构化管理",
-				"url": "http://oa.tansun.com.cn:18810",
+				"url": "http://bestxiao.cn:18810",
 				"icon": "icon-jichuguanli"
 			}, {
 				"title": "运维服务之窗（FWZC）",
@@ -192,12 +192,12 @@
 			}, {
 				"title": "公司简历管理系统(CVSM)",
 				"info": "公司内部的简历管理系统，管理测试，运维的员工简历。生产环境。",
-				"url": "http://oa.tansun.com.cn:26459/",
+				"url": "http://bestxiao.cn:26459/",
 				"icon": "icon-kaiguan"
 			}, {
-				"title": "天阳ITSM流程平台(ITSM)",
-				"info": "天阳ITSM流程管理平台，内置CMDB和流程引擎。",
-				"url": "http://oa.tansun.com.cn:10008/loginIndex",
+				"title": "bestxiaoITSM流程平台(ITSM)",
+				"info": "bestxiaoITSM流程管理平台，内置CMDB和流程引擎。",
+				"url": "http://bestxiao.cn:10008/loginIndex",
 				"icon": "icon-liujisuan"
 			}]
 		}, {

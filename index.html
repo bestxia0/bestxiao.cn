@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bestxiao个人门户</title>
+
+    <!--图标样式-->
+    <link rel="stylesheet" type="text/css" href="statics/css/product-icons.css" />
+    <link rel="stylesheet" type="text/css" href="statics/css/amazeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="statics/font/iconfont.css" />
+
+    <!--主要样式-->
+    <link rel="stylesheet" type="text/css" href="statics/css/style.css" />
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="product-all-header">
+            <div class="header-content" v-if="JSON.stringify(jsonData)!='{}'">
+                <h1>{{jsonData.title}}</h1>
+                <p>{{jsonData.info}}</p>
+                <!--
+        <div class="cui-btn">
+          <a href="#">产品咨询</a>
+        </div>
+      -->
+            </div>
+        </div>
+        <div class="product-all-content" v-if="JSON.stringify(jsonData)!='{}'">
+
+            <!--导航-->
+            <div class="nav" data-am-scrollspynav="{offsetTop: 120}" data-am-sticky>
+                <div class="nav-content">
+
+                    <div class="nav-title">{{jsonData.nav.title}}</div>
+
+                    <ul class="nav-list">
+
+                        <li v-for="(item,index) in jsonData.nav.list" ::key="index">
+                            <a :href="item.url"> {{item.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--内容列表-->
+
+            <!-- product categroy -->
+            <div class="product-content" :id="section.id" v-for="(section,index) in jsonData.section" :key='index'>
+
+                <div class="title" id="title1">{{section.title}}</div>
+                <div>{{section.info}}</div>
+
+                <div class="tips-content">
+                    <!-- product card -->
+
+                    <div class="tips col-sm-4" v-for='(card,index) in section.cardList'>
+
+                        <a :href="card.url">
+                            <i class="inco">
+              <span class="iconfont" :class="card.icon"></span>
+            </i>
+                            <div class="tips-title">{{card.title}}</div>
+                            <div class="tips-info">{{card.info}}</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div style="height: 350px;">
+                <!--高度填充-->
+            </div>
+
+        </div>
+    </div>
+	<script src="statics/js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="statics/js/vue.js"></script>
+    <script src="statics/js/amazeui.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                jsonData: {},
+            },
+            created() {
+                this.getJsonData();
+
+            },
+            methods: {
+                getJsonData() {
+                    axios.get('./data.json').then(res => {
+                        this.jsonData = res.data.project;
+                    })
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

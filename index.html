@@ -6,11 +6,6 @@
   <title>肖建军 | Product & AI</title>
   <meta name="description" content="肖建军 - 产品经理 | AI 工具研究者。分享产品管理实践与 AI 工具应用。">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -35,19 +30,34 @@
   <section class="hero" id="hero">
     <div class="hero__bg"></div>
     <div class="hero__content">
-      <p class="hero__label reveal">肖建军 · Xiao Jianjun</p>
-      <h1 class="hero__title reveal">
-        <span class="hero__title-line">产品管理</span>
-        <span class="hero__title-line hero__title-line--accent">&amp; AI 工具</span>
-        <span class="hero__title-line">研究者</span>
-      </h1>
-      <p class="hero__sub reveal">
-        用产品思维驱动创新，以 AI 工具赋能效率。<br>
-        探索技术与产品的交汇点。
-      </p>
-      <div class="hero__actions reveal">
-        <a href="#projects" class="btn btn--primary">查看项目</a>
-        <a href="#about" class="btn btn--outline">了解更多</a>
+      <div class="hero__main">
+        <p class="hero__label reveal">肖建军 · Xiao Jianjun</p>
+        <h1 class="hero__title reveal">
+          <span class="hero__title-line">产品管理</span>
+          <span class="hero__title-line hero__title-line--accent">&amp; AI 工具</span>
+          <span class="hero__title-line">研究者</span>
+        </h1>
+        <p class="hero__sub reveal">
+          用产品思维驱动创新，以 AI 工具赋能效率。<br>
+          探索技术与产品的交汇点。
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#projects" class="btn btn--primary">查看项目</a>
+          <a href="#about" class="btn btn--outline">了解更多</a>
+        </div>
+      </div>
+      <div class="hero__featured reveal">
+        <div class="featured-card">
+          <span class="featured-card__badge">🔥 热门推荐</span>
+          <h3 class="featured-card__title">AI 编码实践文档</h3>
+          <p class="featured-card__desc">系统化的 AI 辅助编程指南，涵盖提示词工程、代码生成、调试优化等核心技能。</p>
+          <a href="https://bestxiao.asia/aidoc/" target="_blank" rel="noopener" class="featured-card__link">
+            立即查看
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
     <div class="hero__scroll" aria-hidden="true">
@@ -200,6 +210,25 @@
           </div>
         </div>
       </article>
+
+      <article class="project-card fade-up" style="--card-bg: #1e1a2e;">
+        <div class="project-card__image">
+          <div class="project-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/>
+            </svg>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">AI 编码</span>
+          <h3 class="project-card__title">AI 编码实践文档</h3>
+          <p class="project-card__desc">系统化的 AI 辅助编程实践指南，涵盖提示词工程、代码生成、调试优化等核心技能，助力开发者提效。</p>
+          <a href="https://bestxiao.asia/aidoc/" target="_blank" rel="noopener" class="project-card__link">查看文档 →</a>
+          <div class="project-card__tech">
+            <span>Claude</span><span>GPT-4</span><span>提示工程</span><span>最佳实践</span>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -297,6 +326,9 @@
     <div class="footer__inner">
       <p>&copy; 2026 肖建军 · Built with passion</p>
       <p class="footer__tagline">产品 × AI · 探索永不止步</p>
+      <p class="footer__beian">
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">蜀ICP备20003301号</a>
+      </p>
     </div>
   </footer>
 

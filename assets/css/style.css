@@ -21,10 +21,10 @@
   --border: rgba(201, 168, 76, 0.08);
   --border-light: rgba(201, 168, 76, 0.15);
 
-  /* Typography */
-  --font-display: 'Noto Serif SC', serif;
-  --font-body: 'Noto Sans SC', sans-serif;
-  --font-accent: 'Playfair Display', serif;
+  /* Typography - 国内系统字体方案 */
+  --font-display: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'Source Han Sans SC', sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+  --font-accent: 'Georgia', 'Times New Roman', 'Songti SC', serif;
 
   /* Spacing */
   --section-py: clamp(5rem, 12vw, 10rem);
@@ -200,6 +200,21 @@ body::after {
   margin: 0 auto;
   width: 100%;
   padding-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero__featured {
+  flex-shrink: 0;
+  width: 320px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.7s forwards;
 }
 
 .hero__label {
@@ -320,6 +335,85 @@ body::after {
   height: 40px;
   background: linear-gradient(to bottom, var(--accent), transparent);
   animation: scrollPulse 2s ease-in-out infinite;
+}
+
+/* Featured Card */
+.featured-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition);
+}
+
+.featured-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.featured-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 60px rgba(201, 168, 76, 0.15);
+}
+
+.featured-card__badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--accent);
+  background: var(--accent-dim);
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.featured-card__title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.featured-card__desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.featured-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  background: var(--accent);
+  color: var(--bg-primary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all var(--transition);
+}
+
+.featured-card__link:hover {
+  background: transparent;
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+.featured-card__link svg {
+  transition: transform var(--transition);
+}
+
+.featured-card__link:hover svg {
+  transform: translateX(4px);
 }
 
 /* ========== SECTION COMMON ========== */
@@ -563,6 +657,33 @@ body::after {
   border-radius: 4px;
 }
 
+.project-card__link {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: all var(--transition);
+  position: relative;
+}
+
+.project-card__link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 100%; height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition);
+}
+
+.project-card__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 /* ========== ARTICLES ========== */
 .articles__grid {
   display: grid;
@@ -726,6 +847,21 @@ body::after {
   color: var(--text-secondary);
 }
 
+.footer__beian {
+  margin-top: 0.5rem;
+}
+
+.footer__beian a {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.footer__beian a:hover {
+  color: var(--accent);
+}
+
 /* ========== ANIMATIONS ========== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
@@ -772,6 +908,16 @@ body::after {
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 900px) {
+  .hero__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero__featured {
+    width: 100%;
+    max-width: 400px;
+  }
+
   .about__grid {
     grid-template-columns: 1fr;
     gap: 3rem;
